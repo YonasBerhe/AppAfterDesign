@@ -1,19 +1,15 @@
-<html>
-
-
 <body>
 
-  <ion-nav-bar class="bar-positive">
-    <ion-nav-back-button class="button-clear">
-      <i class="ion-arrow-left-c"></i> Back
-    </ion-nav-back-button>
-  </ion-nav-bar>
+<div class="bar bar-header bar-royal">
+  <h1 class="title">bar-royal</h1>
+</div>
 
-  <ion-nav-view></ion-nav-view>
+
+
 
   <ion-view view-title="User Info">
 
-    <ion-content class="padding">
+    <ion-content class="has-header">
 
       <button class="button button-full" type="submit">
         Upload Image of Food
@@ -23,52 +19,35 @@
 
       <form>
 
+
+          <label class="item item-input">
+            <span class="input-label">Name of dish</span>
+            <input type="text" name="name">
+          </label>
+          <br>
         <div class="list">
           <ion-item id="titleItem" class="item-input">
             <textarea overflow-scroll="true" id="title" placeholder="Description"></textarea>
           </ion-item>
           <br>
-          <br>
 
+            <span class="input-label">Expiration date:</span>
           <label class="item item-input">
-            <span class="input-label">Username</span>
-            <input type="text" name="username">
-          </label>
-          <br>
-          <br>
-
-          <label class="item item-input">
-            <span class="input-label">eperation date</span>
             <input type="date">
           </label>
-          <br>
-          <br>
-
-
-
-          <label class="item item-input">
-            <span class="input-label">Username</span>
-            <input type="text" name="username">
-          </label>
-          <br>
-          <br>
-
-          <label class="item item-input">
-            <span class="input-label">Username</span>
-            <input type="text" name="username">
-          </label>
-          <br>
           <br>
           <label class="item item-input item-select">
             <div class="input-label">
               &nbsp;
             </div>
             <select>
-              <option selected>Default</option>
-              <option>Green</option>
-              <option>Red</option>
+              <option selected>Ingredients</option>
+              <option>Dairy</option>
+              <option>Egg</option>
+              <option>Peanuts</option>
             </select>
           </label>
+          
 
           <a href="#/show">
             <button class="button button-full button-positive" type="submit">
@@ -77,7 +56,6 @@
           </a>
 
 
-          <br>
           <br>
 
       </form>

@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <ion-view class="show-food">
 
   <ion-content>
@@ -9,14 +7,29 @@
       <div class="col col-50">One</div>
       <div class="col col-50">Two</div>
     </div> -->
-
-        <form>
-          <div class="list">
-              <rating ng-model="rating.rate" max="rating.max"></rating>
-
-
-          </div>
-        </form>
-
+    <div class="card">
+      <div class="item item-text-wrap">
+        This is a basic Card which contains an item that has wrapping text.
+      </div>
+    </div>
+    <hr class="seperate">
+    <div class="list">
+      <rating ng-model="rating.rate" max="rating.max"></rating>
+    </div>
+          <a href="#/show">
+            <button class="button button-full button-positive" type="submit">
+              Ingredients
+            </button>
+          </a>
+          <a href="#/show">
+            <button class="button button-full button-positive" type="submit">
+              Reviews
+            </button>
+          </a>
+          <a href="#/show">
+            <button class="button button-full button-positive" type="submit">
+              Description
+            </button>
+          </a>
   </ion-content>
 </ion-view>
