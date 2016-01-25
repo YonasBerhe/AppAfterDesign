@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+<div class="bar bar-header bar-positive">
+  <h1 class="title"></h1>
+</div>
+
+
 <ion-view class="show-food">
 
-  <ion-content>
+  <ion-content class="has-header">
     <!--
       <div class="row">
       <div class="col col-50">One</div>
@@ -9,25 +14,27 @@
     </div> -->
     <div class="card">
       <div class="item item-text-wrap">
-        This is a basic Card which contains an item that has wrapping text.
+        <img src="img/spaghetti.jpg" style="height: 200px; width: 50%; margin-left: 25%;">
       </div>
     </div>
-    <hr class="seperate">
     <div class="list">
       <rating ng-model="rating.rate" max="rating.max"></rating>
     </div>
-          <a href="#/show">
-            <button class="button button-full button-positive" type="submit">
-              Ingredients
+
+     <a href="#/ingredients">
+            <button class="button button-full button-transparent" type="submit">
+              Ingrediants
             </button>
           </a>
-          <a href="#/show">
-            <button class="button button-full button-positive" type="submit">
+
+     <a href="#/reviews">
+            <button class="button button-full button-transparent" type="submit">
               Reviews
             </button>
           </a>
-          <a href="#/show">
-            <button class="button button-full button-positive" type="submit">
+
+     <a href="#/show">
+            <button class="button button-full button-transparent" type="submit">
               Description
             </button>
           </a>

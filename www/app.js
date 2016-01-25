@@ -7,7 +7,7 @@
 
 var app =
   angular
-  .module('starter', ['ionic', 'ngOpenFB', 'ionic.rating'])
+  .module('starter', ['ionic', 'ngOpenFB', 'ionic.rating', 'starter.services'])
   .config(config)
   .run(run);
 
@@ -36,8 +36,18 @@ function config($stateProvider, $urlRouterProvider) {
       controller: 'formCtrl'
     })
 
+  $stateProvider.state('expenses', {
+      url: '/ingredients',
+      templateUrl: '../templates/ingredients.html',
+    })
+
+  $stateProvider.state('reviews', {
+      url: '/reviews',
+      templateUrl: '../templates/reviews.html',
+    })
 
 
+// TODO: Create routes for paths to other pages.
   $urlRouterProvider.otherwise('/');
 }
 
